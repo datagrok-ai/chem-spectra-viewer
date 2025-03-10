@@ -1,0 +1,84 @@
+{
+  "name": "@datagrok/spectra-viewer",
+  "friendlyName": "SpectraViewer",
+  "version": "0.0.1",
+  "author": {
+    "name": "Savenko Stanislav",
+    "email": "ssavenko@datagrok.ai"
+  },
+  "description": "Datagrok wrapper for chemical spectra viewer from https://github.com/ComPlat/react-spectra-editor",
+  "overrides": {
+    "react-quill": {
+      "quill": "^2.0.0"
+    },
+    "@complat/react-spectra-editor": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    }
+  },
+  "dependencies": {
+    "@complat/react-spectra-editor": "^1.3.5",
+    "@datagrok-libraries/utils": "^4.3.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "cash-dom": "^8.1.5",
+    "common-spectrum": "^2.12.0",
+    "datagrok-api": "^1.21.3",
+    "dayjs": "^1.11.13",
+    "jcampconverter": "^11.0.1",
+    "quill": "^2.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.21.5",
+    "@babel/core": "7.26.9",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-transform-runtime": "7.26.9",
+    "@babel/preset-env": "7.26.9",
+    "@babel/preset-react": "7.26.3",
+    "@babel/preset-typescript": "7.26.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "babel-loader": "10.0.0",
+    "css-loader": "^7.1.2",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "ts-loader": "latest",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "scripts": {
+    "link-all": "grok link",
+    "debug-spectrum": "webpack && grok publish",
+    "release-spectrum": "webpack && grok publish --release",
+    "build-spectrum": "webpack",
+    "build": "webpack",
+    "debug-spectrum-public": "webpack && grok publish public",
+    "release-spectrum-public": "webpack && grok publish public --release",
+    "debug-spectrum-local": "webpack && grok publish local",
+    "release-spectrum-local": "webpack && grok publish local --release",
+    "debug-spectrum-release": "webpack && grok publish release",
+    "release-spectrum-release": "webpack && grok publish release --release",
+    "debug-spectrum-release-ec2.datagrok.ai": "webpack && grok publish release-ec2.datagrok.ai",
+    "release-spectrum-release-ec2.datagrok.ai": "webpack && grok publish release-ec2.datagrok.ai --release",
+    "debug-spectrum-core": "webpack && grok publish core",
+    "release-spectrum-core": "webpack && grok publish core --release",
+    "debug-spectrum-ec2": "webpack && grok publish ec2",
+    "release-spectrum-ec2": "webpack && grok publish ec2 --release",
+    "debug-spectrum-test": "webpack && grok publish test",
+    "release-spectrum-test": "webpack && grok publish test --release",
+    "debug-spectrum-localDocker": "webpack && grok publish localDocker",
+    "release-spectrum-localDocker": "webpack && grok publish localDocker --release"
+  },
+  "canEdit": [
+    "Developers"
+  ],
+  "canView": [
+    "All users"
+  ]
+}
